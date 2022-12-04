@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="container2">
+            <div class="container4">Counter</div>
+            <div class="container3">
+                <p class="text">0</p>
+
+            </div>
+             
+
+        </div>
+       
+       <div class="container1">
+        <button type="button"  class="button1"  onclick="myfunctions()" >INCREMENT</button>
+        <button type="button"  class="button1"  onclick="myfunctions1()" >RESET</button>
+        <button type="button"  class="button1"  onclick="myfunctions2()" >DECREMENT</button>
+       </div>
+    </div>
+</body>
+<script>
+
+    let value = 0;
+
+    function myfunctions(){
+        let a = document.getElementsByClassName("text")[0];
+        value = value + 1;
+        a.innerText = value ;  
+    }
+
+    function myfunctions2(){
+        let a = document.getElementsByClassName("text")[0];
+        value = value - 1;
+        a.innerText = value ; 
+    }
+
+    function myfunctions1(){
+        let a = document.getElementsByClassName("text")[0];
+        value = 0 ;
+        a.innerText = value ;
+    }
+</script>
+</html>
